@@ -1,3 +1,32 @@
+/* importacion de fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.inicio {
+  padding: 200px 50px 50px 50px;
+}
+
+.bck-color {
+  background-color: rgb(202, 204, 204);
+}
+
+span {
+  color: rgb(178, 180, 180);
+}
+
+.fuente {
+  font-family: "Raleway", sans-serif;
+}
+
+.habilidades__titulos {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 25pt;
+}
+
 .flex-containerr {
   background-color: #fff;
   margin: 0 auto;
