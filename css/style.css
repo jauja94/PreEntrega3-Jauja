@@ -1,0 +1,193 @@
+/* importacion de fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.inicio {
+  padding: 200px 50px 50px 50px;
+}
+
+.bck-color {
+  background-color: rgb(202, 204, 204);
+}
+
+span {
+  color: rgb(178, 180, 180);
+}
+
+.fuente {
+  font-family: "Raleway", sans-serif;
+}
+
+.habilidades__titulos {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 25pt;
+}
+
+.flex-containerr {
+  background-color: #fff;
+  margin: 0 auto;
+  /* activamos flexBox */
+  display: flex;
+}
+
+.habilidaes_img {
+  width: 200px;
+  height: 200px;
+  padding: 25px 25px 25px 25px;
+}
+
+.caja-habilidades {
+  width: 250px;
+  text-align: center;
+  padding-bottom: 150px;
+  margin: 0 auto;
+}
+
+#descripcion-img {
+  height: 250px;
+  width: 200px;
+}
+
+#Descripcion-text {
+  width: 400px;
+  text-align: center;
+  padding-right: 60px;
+}
+
+.habilidades__subtitulos {
+  font-size: 18pt;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+.habilidades__texto {
+  font-family: "Raleway", sans-serif;
+  font-size: 12pt;
+}
+
+.caja-titulo {
+  padding: 50px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.caja-descripcion {
+  width: 250px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+
+/* proyectos*/
+#itemProyectos {
+  padding-bottom: 200px;
+}
+
+.caja-prueba {
+  padding: 0px;
+}
+
+/*Pseudoclase*/
+li a:hover {
+  background-color: rgb(178, 180, 180);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+li a:active {
+  background: #726f6f;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.border {
+  border: 1px solid black;
+}
+
+.imgHabilidades {
+  width: 100px;
+  height: 100px;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+}
+
+/* Grid areas*/
+#grilla {
+  display: grid; /*activamos grid*/
+  grid-template-areas: "header header header header header header" "habilidades habilidades habilidades habilidades habilidades habilidades" "vacio1 velocidad responsive intuitivo dinamico vacio2" "vacio1 descripcion descripcion caracteristicas caracteristicas vacio2";
+  grid-template-rows: 100px 100px 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#grilla header {
+  grid-area: header;
+}
+
+section#vacio1 {
+  grid-area: vacio1;
+}
+
+section#vacio2 {
+  grid-area: vacio;
+}
+
+section#habilidades {
+  grid-area: habilidades;
+}
+
+section#velocidad {
+  grid-area: velocidad;
+}
+
+section#responsive {
+  grid-area: responsive;
+}
+
+section#intuitivo {
+  grid-area: intuitivo;
+}
+
+section#dinamico {
+  grid-area: dinamico;
+}
+
+section#descripcion {
+  grid-area: descripcion;
+}
+
+section#caracteristicas {
+  grid-area: caracteristicas;
+}
+
+#presentacion {
+  width: 200px;
+  height: 250px;
+}
+
+.habilidades-items {
+  text-align: center;
+  height: 400px;
+}
+
+#habilidades__caracteristicas {
+  height: 350px;
+  width: 70%;
+}
+
+/*Mediaqueries*/
+@media screen and (min-width: 100px) and (max-width: 660px) {
+  #grilla {
+    grid-template-rows: 100px 100px 1fr 1fr 1fr 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header" "habilidades habilidades habilidades habilidades" "velocidad velocidad responsive responsive " "intuitivo intuitivo dinamico dinamico" "descripcion descripcion descripcion descripcion" "caracteristicas caracteristicas caracteristicas caracteristicas";
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
